@@ -1,0 +1,142 @@
+---
+title: "Rašto darbo proposal'as"
+author: "Tomas Dzedulionis"
+date: "`r format(Sys.time(), '%Y-%m-%d')`"
+institute: "Vilnius University"
+output:
+  html_document:
+    toc: true
+    df_print: paged
+    number_sections: true
+  pdf_document:
+    toc: true
+    number_sections: true
+    includes:
+      in_header: header_lt_text.txt
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, collapse = TRUE)
+```
+
+#Rašto darbo *proposal'as*
+ 
+Esės, tema: Pajamų nelygybė: formavimasis ir mažinimo metodai, planas.
+
+#Proposal dalys
+##Pavadinimas 
+Rašto darbo pavadinimas: *"Pajamų nelygybė: formavimasis ir mažinimo metodai."*
+
+##Kontekstas
+
+Pajamų nelygybė - viena opiausių ir vis dar sparčiai besivystanti problema, kurios mastas kasmet didėja. 2007-2008m. finansinė krizė kirto skaudžiai, iki tol sparčiai augusi Europos ir pasaulio ekonomika smuko ir dar nepasiekė prieš krizinio lygio. Remiantis World Inequality Lab pateikta 2018m. pasauline pajamų nelygybės ataskaita *(World Inequality Report 2018)*, galime matyti, jog paskutiniaisiais dešimtmečiais pajamų nelygybė augo praktiškai visose šalyse, o ypač tai pastebima rytų Europos valstybėse. 1 procentas pasaulio turtingiausiųjų valdo 45 procentus viso pasaulio turto. Pajamų nelygybė šalyse, priklausančiose OECD(tarptautinė ekonominio bendradarbiavimo ir plėtros organizacija) pajamų nelygybė siekia aukščiausią tašką per paskutinį pusę amžiaus. Nepasitenkinimas didėjančia socialine ir pajamų atskirtimi vis auga. Visuomenė stebi procesą, kurio metu vis didesnė dalis turto kaupiama turtingiausiųjų rankose, o vidurinioji klasė pamažu nyksta. Augantis žmonių nepasitenkinimas virsta ne tik aiškiais veiksmais ( pvz.: geltonųjų liemenių judėjimas Prancūzijoje), tačiau taip pat sudaro sąlygas kilti populistinėms dešiniosioms partijoms. 
+
+##Pagrindiniai klausimai
+
+* Kokie pagrindiniai veiksniai daro įtaką pajamų nelygybės augimui?
+
+* Kokie ekonominiai/politiniai metodai gali padėti kovoti su pajamų nelygybe?
+
+* Kaip matuojama/vertinama pajamų nelygybė?
+
+##Svarbos argumentas
+
+Pajamų nelygybė - viena didžiausių problemų, kuri dar nėra išspręsta. Matant dabartinį socialinį ir politinį kontekstą, šios problemos nesprendimas gali turėti milžiniškų ekonominių, socialinių ir politinių padarinių. Rašto darbu norima įvertinti pagrindinius veiksnius, skatinančius pajamų nelygybės augimą, juos apibendrinti ir analizuoti žinomus metodus, skirtus šios problemos sprendimu.
+
+##Duomenys
+
+* Duomenų šaltinis: *World inequality database*  
+URL: https://wid.world/data/  
+Duomenų pavadinimas: *Pre-tax national income*  
+Metodai: Išgaunami duomenys, kuriuose nurodomi Europos ir pasaulio pre-tax national income procentai pagal 3grupes: Bottom 50%, Middle 40%, Top 10%. Taip pat vėliau gali būti bandoma išgauti pvz. Gerovės valstybių (Skandinavija) national income ir lyginamos su rytų europos valstybėmis.
+* Duomenų šaltinis: *EUROSTAT*  
+URL: https://ec.europa.eu/eurostat/data/database 
+Duomenų pavadinimas: *People at risk of poverty or social exclusion by age and sex* [ilc_peps01]  
+Metodai: Lyginsime Europos valstybių žmonių prie skurdo ribos reitingą atsižvelgiant į mokesčių dydį ir pajamų nelygybę.  
+* Duomenų šaltinis: *EUROSTAT*  
+URL: https://stats.oecd.org/  
+Duomenų pavadinimas: *GINI*, *Palma ratio*, *Poverty rate after taxes and transfers*.  
+Metodai: Lyginsime šalis pagal gini, palma ratingus, tuomet susiesime skurdo rizikos duomenis po mokesčių su duomenimis apie tax-to-gdp ratio.  
+* Duomenų šaltinis: *EUROSTAT*  
+URL: https://data.oecd.org/tax/tax-revenue.htm 
+Duomenų pavadinimas: *Tax revenue* 
+Metodas: Panaudojamas susiejant su duomenimis nurodytais aukščiau.
+* Duomenų šaltinis: *SWIID (Standardized World Income Inequality Database)* 
+Tik susiradau dar šią duombazę, todėl bandau gaut tvarkingus duomenis, jei viskas ok, bus naudojama, nes labai patogu. 
+        
+##Preliminarūs rezultatai
+
+Nėra galutinai suformuota. 
+
+##Literatūra
+
+1. European Commision, "EUROPOS SEMESTRO TEMINĖ INFORMACIJOS SUVESTINĖ NELYGYBĖS ŠALINIMAS", prieiga per internetą:[https://ec.europa.eu/info/sites/info/files/file_import/european-semester_thematic-factsheet_addressing-inequalities_lt.pdf]  
+Iš Europos perspektyvos aprašoma pajamų nelygybės problema, kas iš to seka ir kaip planuojama tai mažinti.
+2. OECD, "Income inequality remains high in the face of weak recovery", prieiga per internetą:[http://www.oecd.org/social/OECD2016-Income-Inequality-Update.pdf]
+OECD apžvalga apie pajamų nelygybę.
+3. World inequality lab, "World inequality report 2018", prieiga per internetą: https://wir2018.wid.world/files/download/wir2018-summary-english.pdf
+Vienas pagrindinių tyrimų šia tema, gan daug naudingos informacijos, pajamų pasiskirstymo grafikų ir tt.
+4. OECD, "Reducing income inequality while boosting economic growth: Can it be done?", prieiga per internetą:[http://www.oecd.org/eco/labour/49421421.pdf]
+Apie kovojimo su pajamų nelygybe būdus, kurie tuo pačiu boostina ekonomika.
+5. BRIAN KEELEY, OECD INSIGHTS "INCOME INEQUALITY", prieiga per internetą: [https://espas.secure.europarl.europa.eu/orbis/sites/default/files/generated/document/en/0115391e.pdf]
+Tiesiai į dešimtuką viskas aprašyta.
+6. Worldbank, "Reducing Income Inequality", prieiga per internetą [http://siteresources.worldbank.org/ECAEXT/Resources/publications/Making-Transition-Work-for-Everyone/chapter10.pdf]
+5. @book{dabla2015causes,
+  title={Causes and consequences of income inequality: A global perspective},
+  author={Dabla-Norris, Ms Era and Kochhar, Ms Kalpana and Suphaphiphat, Mrs Nujin and Ricka, Mr Frantisek and Tsounta, Evridiki},
+  year={2015},
+  publisher={International Monetary Fund}
+}
+per scholarą rodo mokamą, todėl bibtexas iš ten, tačiau kitur yra nemokamai. Viskas neperskaityta, tačiau dalys knygutėso yra tiesiai į esės taikinį. 
+4. @article{zabarauskaite2012gyventojku,
+  title={GYVENTOJ{\k{U}} PAJAM{\k{U}} NELYGYB{\.E} EKONOMINI{\k{U}} CIKL{\k{U}} KONTEKSTE.},
+  author={Zabarauskait{\.e}, Rasa and Bla{\v{z}}ien{\.e}, Inga},
+  journal={Business: Theory \& Practice},
+  volume={13},
+  number={2},
+  year={2012}
+}
+Gana naudingas darbas tiriant priežastis bei gilinantis į nelygybės esmę.
+5. @article{balvovciute2019ar,
+  title={Ar socialin{\.e}s i{\v{s}}mokos ma{\v{z}}ina gyventoj{\k{u}} skurd{\k{a}}? Poveikio lyginamoji analiz{\.e} senosiose ir Ryt{\k{u}} Europos {\v{s}}alyse},
+  author={Balvo{\v{c}}i{\=u}t{\.e}, Rasa},
+  journal={Socialin{\.e} teorija, empirija, politika ir praktika},
+  volume={18},
+  pages={23--45},
+  year={2019}
+}
+Socialinių išmokų, kaip būdo pajamų nelygybei mažinti, vertinimas.
+6. @article{skuvciene2008pajamku,
+  title={Pajam{\k{u}} nelygyb{\.e} Lietuvoje},
+  author={Sku{\v{c}}ien{\.e}, Daiva},
+  journal={Filosofija. Sociologija},
+  volume={19},
+  number={4},
+  pages={22--33},
+  year={2008}
+}
+Pajamų nelygybės apžvalga, kodėl formuojas, kaip bendrauja su gerovės valstybe, išmokomis, bei kokius padarinius kelia.
+7. @phdthesis{dilius2017pajamku,
+  title={Pajam{\k{u}} nelygyb{\.e}s poveikio ekonomikos augimui vertinimas Europos S{\k{a}}jungos {\v{s}}ali{\k{u}} grup{\.e}se},
+  author={Dilius, Aidas},
+  year={2017},
+  school={Siauliai University}
+}
+Nors pati disertacija kitokia tema, tačiau pajamų nelygybei skiriama gana aiškaus dėmesio, kuris trumpesnėje esėje būtų panaudojamas.
+
+
+
+
+
+https://haasinstitute.berkeley.edu/six-policies-reduce-economic-inequality
+
+
+
+##Turinys
+
+        1. Įvadas  
+        Kas yra pajamu nelygybe  
+        2. Pajamu nelygybes formavimasis  
+        3. Isvados
+        
+        
