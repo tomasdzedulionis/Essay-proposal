@@ -2,17 +2,20 @@
 title: "Rašto darbo proposal'as"
 author: "Tomas Dzedulionis"
 date: "`r format(Sys.time(), '%Y-%m-%d')`"
-institute: "Vilnius University"
 output:
   html_document:
-    toc: true
-    df_print: paged
-    number_sections: true
+    number_sections: yes
+    self_contained: no
+    toc: yes
+  word_document:
+    toc: yes
   pdf_document:
-    toc: true
-    number_sections: true
     includes:
       in_header: header_lt_text.txt
+    keep_tex: yes
+    number_sections: yes
+    toc: yes
+institute: Vilnius University
 ---
 
 ```{r setup, include=FALSE}
@@ -29,7 +32,7 @@ Rašto darbo pavadinimas: *"Pajamų nelygybė: formavimasis ir mažinimo metodai
 
 ##Kontekstas
 
-Pajamų nelygybė - viena opiausių ir vis dar sparčiai besivystanti problema, kurios mastas kasmet didėja. 2007-2008m. finansinė krizė kirto skaudžiai, iki tol sparčiai augusi Europos ir pasaulio ekonomika smuko ir dar nepasiekė prieš krizinio lygio. Remiantis World Inequality Lab pateikta 2018m. pasauline pajamų nelygybės ataskaita *(World Inequality Report 2018)*, galime matyti, jog paskutiniaisiais dešimtmečiais pajamų nelygybė augo praktiškai visose šalyse, o ypač tai pastebima rytų Europos valstybėse. 1 procentas pasaulio turtingiausiųjų valdo 45 procentus viso pasaulio turto. Pajamų nelygybė šalyse, priklausančiose OECD(tarptautinė ekonominio bendradarbiavimo ir plėtros organizacija) pajamų nelygybė siekia aukščiausią tašką per paskutinį pusę amžiaus. Nepasitenkinimas didėjančia socialine ir pajamų atskirtimi vis auga. Visuomenė stebi procesą, kurio metu vis didesnė dalis turto kaupiama turtingiausiųjų rankose, o vidurinioji klasė pamažu nyksta. Augantis žmonių nepasitenkinimas virsta ne tik aiškiais veiksmais ( pvz.: geltonųjų liemenių judėjimas Prancūzijoje), tačiau taip pat sudaro sąlygas kilti populistinėms dešiniosioms partijoms. 
+Pajamų nelygybė - viena opiausių ir vis dar sparčiai besivystanti problema, kurios mastas kasmet didėja. 2007-2008m. finansinė krizė kirto skaudžiai, iki tol sparčiai augusi Europos ir pasaulio ekonomika smuko ir dar nepasiekė prieš krizinio lygio. Remiantis World Inequality Lab pateikta 2018m. pasauline pajamų nelygybės ataskaita *(World Inequality Report 2018)*, galime matyti, jog paskutiniaisiais dešimtmečiais pajamų nelygybė augo praktiškai visose šalyse, o ypač tai pastebima rytų Europos valstybėse. 1 procentas pasaulio turtingiausiųjų valdo 45 procentus viso pasaulio turto. Pajamų nelygybė šalyse, priklausančiose OECD (Tarptautinė ekonominio bendradarbiavimo ir plėtros organizacija), siekia aukščiausią tašką per paskutinį pusę amžiaus. Nepasitenkinimas didėjančia pajamų ir socialine atskirtimi vis auga. Visuomenė stebi procesą, kurio metu vis didesnė dalis turto kaupiama turtingiausiųjų rankose, auga skurstančiųjų skaičius, o vidurinioji klasė pamažu nyksta. Augantis žmonių nepasitenkinimas virsta ne tik aiškiais veiksmais ( pvz.: geltonųjų liemenių judėjimas Prancūzijoje), tačiau taip pat sudaro sąlygas kilti populistinėms partijoms. 
 
 ##Pagrindiniai klausimai
 
@@ -63,6 +66,10 @@ Duomenų pavadinimas: *Tax revenue*
 Metodas: Panaudojamas susiejant su duomenimis nurodytais aukščiau.
 * Duomenų šaltinis: *SWIID (Standardized World Income Inequality Database)* 
 Tik susiradau dar šią duombazę, todėl bandau gaut tvarkingus duomenis, jei viskas ok, bus naudojama, nes labai patogu. 
+* Duomenų šaltinis: *EUROSTAT*  
+URL: http://appsso.eurostat.ec.europa.eu/nui/show.do?dataset=ilc_di03&lang=en
+Duomenų pavadinimas: *Mean and median income by age and sex - EU-SILC survey [ilc_di03]* 
+Metodas: Pajamų lyginimas pagal lytį. 
         
 ##Preliminarūs rezultatai
 
@@ -123,7 +130,28 @@ Pajamų nelygybės apžvalga, kodėl formuojas, kaip bendrauja su gerovės valst
   school={Siauliai University}
 }
 Nors pati disertacija kitokia tema, tačiau pajamų nelygybei skiriama gana aiškaus dėmesio, kuris trumpesnėje esėje būtų panaudojamas.
-
+8. @article{de2017finance,
+  title={Finance and income inequality: A review and new evidence},
+  author={De Haan, Jakob and Sturm, Jan-Egbert},
+  journal={European Journal of Political Economy},
+  volume={50},
+  pages={171--195},
+  year={2017},
+  publisher={Elsevier}
+}
+Bendrai tinka.
+9.
+@article{roser2016income,
+  title={Why is income inequality increasing in the developed world?},
+  author={Roser, Max and Cuaresma, Jesus Crespo},
+  journal={Review of Income and Wealth},
+  volume={62},
+  number={1},
+  pages={1--27},
+  year={2016},
+  publisher={Wiley Online Library}
+}
+Prie veiksniu, lemiančių pajamų nelygybę.
 
 
 
@@ -134,9 +162,22 @@ https://haasinstitute.berkeley.edu/six-policies-reduce-economic-inequality
 
 ##Turinys
 
-        1. Įvadas  
-        Kas yra pajamu nelygybe  
-        2. Pajamu nelygybes formavimasis  
-        3. Isvados
+        1. Įvadas...................................................1
+                1.1. Kontekstas...................................(?)
+                1.2. Svarbos argumentas...........................(?)
+        2. Pajamų nelygybės formavimasis..........................(?)
+                2.1. Istorinė seka................................(?)
+                2.2. Svarbiausi veiksniai.........................(?)
+                        2.2.1. Neoliberalizmas ir globalizmas.....(?)
+                        2.2.2. Politiniai ir mokestiniai veiksniai(?)
+                        2.2.3. Išsilavinimas ir technologijos.....(?)
+                        2.2.4. Socialiniai veiksniai..............(?)
+        3. Pajamų nelygybės vertinimas ir matavimas...............(?)
+        4. Pajamų nelygybės mažinimo metodai......................(?)
+                4.1. MMA Didinimas................................(?)
+                4.2. Mokestinės priemonės ir perskirtymas.........(?)
+                4.3. Švietimas ir kompetencijų kėlimas............(?)
+                4.4. Gerovės valstybės modelis....................(?)
+        5. Išvados................................................(?)
         
         
